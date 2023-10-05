@@ -23,3 +23,4 @@ public class P02 {
 		System.out.println(solution(str));
 	}
 }
+
