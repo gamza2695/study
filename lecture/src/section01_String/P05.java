@@ -1,36 +1,30 @@
 package section01_String;
 
+import java.util.Scanner;
+
 public class P05 {
 	public static String solution(String str) {
 		
+		String answer;
 		char[] s = str.toCharArray();
 		
+		int lt =0, rt = str.length()-1;
 		
-		for(int lt = 0 ; lt<)
-		
-		
-		
-		for(int i = 0; i<str.length(); i++) {
-			int lt = 0, rt = str.length()-1;
-
-			if((s[i]>='a' && s[i]<='z') || (s[i]>='A' && s[i]<='Z')){
-				
-				while(lt<rt) {
-					char tmp = s[lt];
-					s[lt] = s[rt];
-					s[rt]=tmp;
-					lt++;
-					rt--;
-				}
+		while(lt<rt) {
+			if(!Character.isAlphabetic(s[lt])) lt++;
+			else if(Character.isAlphabetic(s[rt])) rt--;
+			else {
+				char tmp = s[lt];
+				s[lt] = s[rt];
+				s[rt]=tmp;
+				lt++;
+				rt--;
 			}
-			
-			
 		}
+		answer = String.valueOf(s);
 		
-
-		
-		
-		return str;
+	
+		return answer;
 	}
 		
 
