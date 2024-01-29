@@ -2,7 +2,7 @@ package section03_TwoPointers_SlidingWindow;
 
 import java.util.Scanner;
 
-public class P05 { // 3-5 연속된 자연수의 합(two pointers)
+public class P05_1 { // 3-5 연속된 자연수의 합(two pointers)
 	
 	
 	public static int solution(int n) {
